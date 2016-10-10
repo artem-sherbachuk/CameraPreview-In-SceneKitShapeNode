@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DrawsCameraAsBackgoundWithSceneKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-5y-7mU">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </sceneKitView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aue-Pl-aOG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="794-a8-ukT"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WWC-5y-7mU" secondAttribute="trailing" id="6BV-qc-xWh"/>
+                            <constraint firstItem="WWC-5y-7mU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RzY-QG-4Io"/>
+                            <constraint firstAttribute="trailing" secondItem="aue-Pl-aOG" secondAttribute="trailing" id="W4f-gM-c9F"/>
+                            <constraint firstItem="aue-Pl-aOG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XIW-3K-Vlm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WWC-5y-7mU" secondAttribute="bottom" id="f6X-aR-j9k"/>
+                            <constraint firstItem="WWC-5y-7mU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="rru-1O-hUD"/>
+                            <constraint firstItem="aue-Pl-aOG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="sTP-9Z-Xpe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="WWC-5y-7mU" id="kS9-1A-TtX"/>
+                        <outlet property="shapePicker" destination="aue-Pl-aOG" id="TtU-GB-8ei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191.5" y="381.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

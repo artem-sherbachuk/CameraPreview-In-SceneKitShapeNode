@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  DrawsCameraAsBackgoundWithSceneKit
 //
-//  Created by Judson Douglas on 11/14/14.
-//  Copyright (c) 2014 Judson Douglas. All rights reserved.
+//  Created by Artem Sherbachuk (UKRAINE) on 10/6/16.
+//  Copyright © 2016 Judson Douglas. All rights reserved.
 //
 
 import UIKit

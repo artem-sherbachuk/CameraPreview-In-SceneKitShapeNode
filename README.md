@@ -1,4 +1,5 @@
 Real time shaped preview layer from camera. for fun
 ================================
 
-Render camera perview into SceneKit geometry nodes
+Render camera preview into SceneKit geometry nodes
+[video example](https://youtu.be/YQn47GDyX94)
